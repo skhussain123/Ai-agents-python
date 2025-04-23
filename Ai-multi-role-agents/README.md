@@ -25,11 +25,7 @@ This project implements a conversational AI agent using LangGraph, Groq's LLM AP
    ```bash
    git clone https://github.com/yourusername/ai-chat-agent.git
    cd ai-chat-agent
-   pipenv install
-   pipenv install -r requirements.txt
-   pipenv shell
-   pipenv backend.php  --> to active uvicron server
-   streamlit run frontend.py   ->> run and goto streamlit url
+
 
 
 2. Set up the environment:
@@ -37,4 +33,15 @@ This project implements a conversational AI agent using LangGraph, Groq's LLM AP
    pipenv install
    pipenv install -r requirements.txt
    pipenv shell
+
+
+
+3. Run the backend server:
+   ```python backend.py  # This will start the Uvicorn server
+
+
+
+4. In a new terminal (while keeping backend running), run the frontend:
+   ```pipenv shell  # If not already in the virtual environment
+   streamlit run frontend.py
 
